@@ -18,8 +18,8 @@
 ## Маршрутизация
 
 - Общие задачи: [контекст](docs/01-context-loading.md) → [workflow](docs/02-task-workflow.md) → [проверки](docs/09-testing-and-verification.md) → [delivery](docs/10-git-and-delivery.md).
-- React/TS/Next/FSD: [FSD](docs/03-fsd.md), [компоненты](docs/04-components.md), [TS](docs/05-typescript.md), [Next.js](docs/06-nextjs.md), [performance](docs/07-performance.md), [UI риски](docs/11-ui-context-risks.md).
-- Backend/Go: [Go](docs/16-go-and-backend.md), [privacy](docs/14-security-and-privacy.md).
+- Frontend: [навигация](docs/frontend/README.md), [FSD](docs/frontend/fsd.md), [React](docs/frontend/react-components.md), [TypeScript](docs/frontend/typescript.md), [Next.js](docs/frontend/nextjs.md), [performance](docs/frontend/performance.md), [UI](docs/frontend/ui-context-risks.md).
+- Backend: [навигация](docs/backend/README.md), [Go](docs/backend/go.md), [HTTP API](docs/backend/api-contracts.md), [БД](docs/backend/data-integrity.md), [backend-тесты](docs/backend/testing.md), [privacy](docs/14-security-and-privacy.md).
 - Архитектура, безопасность, миграции, CI: [методы верификации](docs/12-verification-techniques.md), [gates/review](docs/13-review-and-gates.md), [проектные overrides](docs/15-project-overrides.md).
 
 **Специфика проекта** (команды, порты, разрешения, обязательные проверки и исключения) хранится в отдельном файле, созданном по [шаблону](docs/templates/project-profile.md). Этот репозиторий не задаёт продакшн-конфигурации других проектов.

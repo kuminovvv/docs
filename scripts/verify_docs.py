@@ -10,7 +10,12 @@ REQUIRED = [
     'AGENTS.md', 'agents.md', 'CLAUDE.md', 'REVIEW.md', 'README.md',
     'docs/README.md', 'docs/09-testing-and-verification.md',
     'docs/12-verification-techniques.md', 'docs/13-review-and-gates.md',
-    'docs/14-security-and-privacy.md', '.claude/skills/verify/SKILL.md',
+    'docs/14-security-and-privacy.md',
+    'docs/frontend/README.md', 'docs/frontend/react-components.md',
+    'docs/frontend/typescript.md', 'docs/frontend/nextjs.md',
+    'docs/backend/README.md', 'docs/backend/go.md',
+    'docs/backend/api-contracts.md', 'docs/backend/data-integrity.md',
+    'docs/backend/testing.md', '.claude/skills/verify/SKILL.md',
 ]
 errors = []
 for name in REQUIRED:
