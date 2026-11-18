@@ -1,17 +1,14 @@
 # docs — правила работы ИИ-агентов с кодом
 
-Переносимый набор инструкций для ChatGPT, Claude Code, OpenCode и других coding agents.
-Содержит общие правила выполнения задач, отдельные инструкции в `docs/frontend/` (React/TypeScript/Next.js/FSD)
-и `docs/backend/` (Go/HTTP/PostgreSQL), а также независимый контур верификации. Язык инструкций — русский.
+Набор **проектных** инструкций для ChatGPT, Claude Code, OpenCode и других coding agents. Единый корневой `AGENTS.md` и его алиас `agents.md` намеренно отсутствуют: выбор правил делается по фактическому стеку и задаче.
 
-**Вход:** [`AGENTS.md`](AGENTS.md). **Навигация:** [`docs/README.md`](docs/README.md), [`frontend`](docs/frontend/README.md), [`backend`](docs/backend/README.md).
-`agents.md` оставлен как алиас для систем, требующих нижний регистр.
+**Точки входа:** [frontend AGENTS.md](docs/frontend/AGENTS.md) (React/TypeScript/Next.js/FSD) и [backend AGENTS.md](docs/backend/AGENTS.md) (Go/HTTP/PostgreSQL). [Навигация](docs/README.md). Общие справочные материалы остаются вспомогательными, а не обязательным корневым контрактом.
 
 ## Применение
 
-1. Перенесите `AGENTS.md` и каталог `docs/` в корень конкретного проекта (или предоставьте их агенту как инструкции).
-2. Заполните профиль проекта по [`docs/templates/project-profile.md`](docs/templates/project-profile.md): команды, стек, тестовые среды, запреты, CI и разрешённые действия.
-3. Выберите `docs/frontend/` либо `docs/backend/` по реальному стеку проекта. Общие документы в `docs/` применяйте к обоим направлениям по необходимости.
+1. Выберите [frontend](docs/frontend/AGENTS.md) или [backend](docs/backend/AGENTS.md) по фактическому стеку. Для fullstack можно применять оба раздела к соответствующему коду.
+2. В целевом приложении создайте собственный корневой `AGENTS.md` на основе выбранных проектных правил, адаптировав ссылки и конфигурацию. В **этом** репозитории общего корневого `AGENTS.md` нет.
+3. Заполните профиль проекта по [`docs/templates/project-profile.md`](docs/templates/project-profile.md): команды, стек и версии, тестовые среды, запреты, CI и разрешённые действия.
 4. `docs/09-testing-and-verification.md` и `docs/13-review-and-gates.md` применяются к задачам, где меняется поведение, архитектура, безопасность или поставка.
 5. Не копируйте секреты, конфиденциальные логи и производственные дампы в публичный репозиторий с правилами.
 

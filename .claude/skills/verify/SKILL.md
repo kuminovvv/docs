@@ -5,7 +5,7 @@ description: Verify changes in the actual target application with reproducible e
 
 # Verify skill — проектный шаблон
 
-Перед применением прочитайте `AGENTS.md`, `docs/09-testing-and-verification.md`,
+Перед применением выберите `docs/frontend/AGENTS.md` или `docs/backend/AGENTS.md` по scope задачи, затем прочитайте `docs/09-testing-and-verification.md`,
 `docs/12-verification-techniques.md`, `docs/13-review-and-gates.md` и локальный `docs/project-profile.md` (если он есть).
 
 1. Установите task acceptance criteria и точный scope; проверьте Git status/SHA и запрещённые пути.

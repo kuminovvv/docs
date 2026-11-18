@@ -7,17 +7,20 @@ import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = [
-    'AGENTS.md', 'agents.md', 'CLAUDE.md', 'REVIEW.md', 'README.md',
+    'CLAUDE.md', 'REVIEW.md', 'README.md',
     'docs/README.md', 'docs/09-testing-and-verification.md',
     'docs/12-verification-techniques.md', 'docs/13-review-and-gates.md',
     'docs/14-security-and-privacy.md',
-    'docs/frontend/README.md', 'docs/frontend/react-components.md',
+    'docs/frontend/AGENTS.md', 'docs/frontend/README.md', 'docs/frontend/react-components.md',
     'docs/frontend/typescript.md', 'docs/frontend/nextjs.md',
-    'docs/backend/README.md', 'docs/backend/go.md',
+    'docs/backend/AGENTS.md', 'docs/backend/README.md', 'docs/backend/go.md',
     'docs/backend/api-contracts.md', 'docs/backend/data-integrity.md',
     'docs/backend/testing.md', '.claude/skills/verify/SKILL.md',
 ]
 errors = []
+for obsolete in ('AGENTS.md', 'agents.md'):
+    if (ROOT / obsolete).exists():
+        errors.append(f'forbidden root agent file: {obsolete}')
 for name in REQUIRED:
     if not (ROOT / name).is_file():
         errors.append(f'missing required file: {name}')

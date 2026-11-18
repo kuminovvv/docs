@@ -1,6 +1,6 @@
 # Frontend — правила для React, TypeScript и Next.js
 
-Применяйте **только при соответствующем стеке**. Для FSD и Next.js 16/App Router необходима проверка фактического использования в проекте.
+**Точка входа:** [AGENTS.md](AGENTS.md). Применяйте **только при соответствующем стеке**. Для FSD и Next.js 16/App Router необходима проверка фактического использования в проекте.
 
 | Документ | Содержание |
 | --- | --- |
@@ -12,6 +12,6 @@
 | [error-handling.md](error-handling.md) | Ошибки fetch, UI feedback и приватность |
 | [ui-context-risks.md](ui-context-risks.md) | UI-состояния, accessibility, E2E |
 
-Общие правила применяются дополнительно: [выполнение задачи](../02-task-workflow.md), [верификация](../09-testing-and-verification.md), [безопасность](../14-security-and-privacy.md), [review](../13-review-and-gates.md).
+При необходимости используйте справочные методики: [выполнение задачи](../02-task-workflow.md), [верификация](../09-testing-and-verification.md), [безопасность](../14-security-and-privacy.md), [review](../13-review-and-gates.md).
 
 Эти документы не предписывают выбирать React/FSD/Next.js для проектов с другим стеком.

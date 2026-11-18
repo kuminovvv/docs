@@ -2,8 +2,6 @@ name: docs-check
 on:
   push:
     paths:
-      - 'AGENTS.md'
-      - 'agents.md'
       - 'CLAUDE.md'
       - 'REVIEW.md'
       - 'README.md'
